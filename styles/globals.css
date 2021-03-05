@@ -1,9 +1,32 @@
+:root {
+   --global-font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+   --global-heading-1-size: 3rem;
+   --global-heading-2-size: 2rem;
+   --global-heading-3-size: 2rem;
+   --global-heading-3-line-height: ;
+   --global-font-size: 1rem;
+   --global-text-color-dark: rgb(65, 64, 64);
+   --global-text-color-white: rgb(255, 255, 255);
+   --global-color-primary: #b984bee8;
+   --global-color-secondary: #91c1c4;
+   --global-color-warning: #e28413;
+   --global-color-danger: #ff6542;
+   --line-height-multiplier: 1;
+   --font-size-multiplier: 1;
+ 
+}
+
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-family: var(--global-font-family); 
+  font-size: var(--global-font-size);
+  color: var(--global-text-color);
+}
+
+ul {
+   list-style-type: none;
 }
 
 a {
@@ -14,3 +37,47 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1 {
+   font-size: var(--global-primary-title-size);
+}
+
+h3 {
+   font-size: var(--global-secondary-title-size);
+   color: var(--global-color-secondary);
+}
+
+h5 {
+   font-size: var(--global-font-size);
+   color: var(--global-color-secondary);
+}
+
+/* tablet */
+@media (min-width: 640px) {
+   :root {
+      --line-height-multiplier: 1;
+      --font-size-multiplier: 1;
+   }
+}
+/* laptop */
+@media (min-width: 768px) {
+   :root {
+      --line-height-multiplier: 1;
+      --font-size-multiplier: 1;
+   }
+}
+/* desktop */
+@media (min-width: 1024px) {
+   :root {
+      --line-height-multiplier: 1;
+      --font-size-multiplier: 1;
+   }
+}
+/* large-desktop */
+@media (min-width: 1280px) {
+   :root {
+      --line-height-multiplier: 1;
+      --font-size-multiplier: 1;
+   }
+}
+

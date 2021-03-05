@@ -1,0 +1,32 @@
+.wrapper {
+  
+}
+
+.flexContainer {
+   min-height: 300px;
+   width: 100%;
+   color: var(--global-text-color-white);
+   background-color: var(--global-color-primary);
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column-reverse;
+   flex: 1;
+   align-items: center;
+   justify-content: space-around;
+   padding: 0 0 40px 0;
+}
+
+/* tablet and desktop */
+@media (min-width: 640px) {
+   .flexContainer {
+      flex-direction: row;
+      min-height: 250px;
+   }
+}
+
+@media (min-width: 768px) {
+   .flexContainer {
+      padding: 0 10%; 
+   }
+}

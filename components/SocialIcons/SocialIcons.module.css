@@ -1,0 +1,6 @@
+
+.flexContainer{
+   display: flex;
+   max-width: 150px;
+   justify-content: space-between;
+}
