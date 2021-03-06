@@ -1,0 +1,14 @@
+.socialFlex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  min-height: 80px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+@media (min-width: 1024px) {
+  .socialFlex {
+    width: 170px;
+  }
+}
