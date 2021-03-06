@@ -16,7 +16,7 @@
    .footerFlex {
       flex-direction: row;
       justify-content: space-between;
-      min-height: 200px;
+      min-height: 230px;
       padding: 0 5%; 
    }
 }
