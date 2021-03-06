@@ -5,7 +5,12 @@
 }
 
 .flexContainer .text {
-   line-height: 0.1rem;
+   margin: 5px 0;
+}
+
+.flexContainer .header {
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
 
 /* tablet and desktop */
