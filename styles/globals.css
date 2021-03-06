@@ -1,32 +1,30 @@
 :root {
-   --global-font-family: 'Roboto', sans-serif;
-   --global-heading-1-size: 3rem;
-   --global-heading-2-size: 2rem;
-   --global-heading-3-size: 1.5rem;
-   --global-font-size: 1rem;
-   --global-font-line-height: 1.7em;
-   --global-text-color-dark: rgb(65, 64, 64);
-   --global-text-color-white: rgb(255, 255, 255);
-   --global-color-primary: #b984bee8;
-   --global-color-secondary: #91c1c4;
-   --global-color-warning: #e28413;
-   --global-color-danger: #ff6542;
-   --global-color-danger: #ff6542;
-   --global-color-vihr-primary-lightgreen: #76b72a;
-   --global-color-vihr-primary-darkgreen: #045a1c;
-   --global-color-vihr-primary-darkgrey: #56504d;
-   --global-color-vihr-primary-lightgrey: #e3e3e3;
-   --global-color-vihr-secondary-turqouse: #28b8ce;
-   --global-color-vihr-secondary-yellow: #ffdd00;
-   --global-color-vihr-secondary-orange: #d67c1c;
-   --global-color-vihr-secondary-crimson: #e5005a;
-   --line-height-multiplier: 1;
-   --font-size-multiplier: 1;
- 
+  --global-font-family: "Roboto", sans-serif;
+  --global-heading-1-size: 3rem;
+  --global-heading-2-size: 2rem;
+  --global-heading-3-size: 1.5rem;
+  --global-font-size: 1rem;
+  --global-font-line-height: 1.7em;
+  --global-color-darkgrey: rgb(65, 64, 64);
+  --global-color-white: rgb(255, 255, 255);
+  --global-color-primary: #b984bee8;
+  --global-color-secondary: #91c1c4;
+  --global-color-warning: #e28413;
+  --global-color-danger: #ff6542;
+  --global-color-vihr-primary-lightgreen: #76b72a;
+  --global-color-vihr-primary-darkgreen: #045a1c;
+  --global-color-vihr-primary-darkgrey: #56504d;
+  --global-color-vihr-primary-lightgrey: #e3e3e3;
+  --global-color-vihr-secondary-turqouse: #28b8ce;
+  --global-color-vihr-secondary-yellow: #ffdd00;
+  --global-color-vihr-secondary-orange: #d67c1c;
+  --global-color-vihr-secondary-crimson: #e5005a;
+  --line-height-multiplier: 1;
+  --font-size-multiplier: 1;
 }
 
 p {
-  margin: 0
+  margin: 0;
 }
 
 html,
@@ -34,14 +32,14 @@ body {
   height: 100%;
   padding: 0;
   font-size: 16px;
-  font-family: var(--global-font-family); 
+  font-family: var(--global-font-family);
   font-size: var(--global-font-size);
   line-height: var(--global-font-line-height);
   color: var(--global-text-color-dark);
 }
 
 ul {
-   list-style-type: none;
+  list-style-type: none;
 }
 
 a {
@@ -54,45 +52,44 @@ a {
 }
 
 h1 {
-   font-size: var(--global-heading-1-size);
+  font-size: var(--global-heading-1-size);
 }
 
 h2 {
-   font-size: var(--global-heading-2-size);
-   color: var(--global-color-secondary);
+  font-size: var(--global-heading-2-size);
+  color: var(--global-color-secondary);
 }
 
 h3 {
-   font-size: var(--global-heading-3-size);
-   color: var(--global-color-vihr-primary-lightgreen);
+  font-size: var(--global-heading-3-size);
+  color: var(--global-color-vihr-primary-lightgreen);
 }
 
 /* tablet */
 @media (min-width: 640px) {
-   :root {
-      --line-height-multiplier: 1;
-      --font-size-multiplier: 1;
-   }
+  :root {
+    --line-height-multiplier: 1;
+    --font-size-multiplier: 1;
+  }
 }
 /* laptop */
 @media (min-width: 768px) {
-   :root {
-      --line-height-multiplier: 1;
-      --font-size-multiplier: 1;
-   }
+  :root {
+    --line-height-multiplier: 1;
+    --font-size-multiplier: 1;
+  }
 }
 /* desktop */
 @media (min-width: 1024px) {
-   :root {
-      --line-height-multiplier: 1;
-      --font-size-multiplier: 1;
-   }
+  :root {
+    --line-height-multiplier: 1;
+    --font-size-multiplier: 1;
+  }
 }
 /* large-desktop */
 @media (min-width: 1280px) {
-   :root {
-      --line-height-multiplier: 1;
-      --font-size-multiplier: 1;
-   }
+  :root {
+    --line-height-multiplier: 1;
+    --font-size-multiplier: 1;
+  }
 }
-
