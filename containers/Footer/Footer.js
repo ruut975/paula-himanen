@@ -5,7 +5,7 @@ import ContactInfo from '../../components/ContactInfo/ContactInfo'
 
 const Footer = () => (
    <footer className={styles.wrapper}>
-      <div className={styles.flexContainer}>
+      <div className={styles.footerFlex}>
          <a href="#" className={styles.logo}>Logo</a>
          <SocialIcons />
          <ContactInfo />

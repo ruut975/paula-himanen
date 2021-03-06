@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link'
-
-import Footer from '../containers/Footer/Footer';
+import styles from './Home.module.css'
+import Footer from '../containers/Footer/Footer'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Paula Himanen</title>
+        <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css"></link>
       </Head>
 
       <main className={styles.main}>

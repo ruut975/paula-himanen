@@ -2,7 +2,7 @@
   
 }
 
-.flexContainer {
+.footerFlex {
    min-height: 300px;
    width: 100%;
    color: var(--global-text-color-white);
@@ -19,14 +19,14 @@
 
 /* tablet and desktop */
 @media (min-width: 640px) {
-   .flexContainer {
+   .footerFlex {
       flex-direction: row;
       min-height: 250px;
    }
 }
 
 @media (min-width: 768px) {
-   .flexContainer {
+   .footerFlex {
       padding: 0 10%; 
    }
 }
