@@ -4,14 +4,10 @@
    align-items: center;
 }
 
-.flexContainer .text {
-   margin: 5px 0;
-}
-
 .flexContainer .header {
-  margin-top: 8px;
+  margin-top: 0px;
   margin-bottom: 15px;
-}
+} 
 
 /* tablet and desktop */
 @media (min-width: 640px) {

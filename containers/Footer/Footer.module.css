@@ -1,6 +1,6 @@
 
 .footerFlex {
-   min-height: 350px;
+   min-height: 330px;
    width: 100%;
    color: var(--global-text-color-white);
    background-color: var(--global-color-vihr-primary-darkgrey);
@@ -16,7 +16,7 @@
    .footerFlex {
       flex-direction: row;
       justify-content: space-between;
-      min-height: 230px;
+      min-height: 200px;
       padding: 0 5%; 
    }
 }

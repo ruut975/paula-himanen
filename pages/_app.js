@@ -1,4 +1,4 @@
-import 'normalize.css'
+import 'sanitize.css'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
