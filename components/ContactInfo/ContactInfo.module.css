@@ -7,7 +7,11 @@
 .flexContainer .header {
   margin-top: 0px;
   margin-bottom: 15px;
-} 
+}
+
+.flexContainer a:hover {
+ text-decoration: underline;
+}
 
 /* tablet and desktop */
 @media (min-width: 640px) {
