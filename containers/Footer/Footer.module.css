@@ -10,7 +10,7 @@
   justify-content: center;
 }
 
-/* tablet and desktop */
+/* sm tablet */
 @media (min-width: 640px) {
   .footerFlex {
     flex-direction: row;
@@ -20,12 +20,7 @@
   }
 }
 
-@media (min-width: 768px) {
-  .footerFlex {
-    padding: 0 10%;
-  }
-}
-
+/* laptop */
 @media (min-width: 1024px) {
   .footerFlex {
     padding: 0 15%;

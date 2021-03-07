@@ -18,18 +18,15 @@ const Navbar = (props) => {
     });
   };
 
-  let iconSrc = "/menu-icon.svg";
-  if (showMenu) {
-    iconSrc = "/x-mark-icon.svg";
-  }
+  let iconSrc = showMenu ? "/x-mark-icon.svg" : "/menu-icon.svg";
 
   return (
     <nav className={styles.navbarFlex}>
       <div className={styles.wrapper}>
-        <a href="/">
+        <a className={styles.logo} href="/">
           <Logo />
         </a>
-        <a href="#" className={styles.toggleNav}>
+        <a href="#" role="button" className={styles.toggleNav}>
           <Image
             src={iconSrc}
             alt="menu"

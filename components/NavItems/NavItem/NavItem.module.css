@@ -16,12 +16,12 @@
   background-color: var(--global-color-vihr-primary-lightgrey);
 }
 
-/* desktop */
-@media (min-width: 768px) {
+/* sm tablet */
+@media (min-width: 640px) {
   .navItem {
     width: auto;
-    margin-left: 20px;
-    padding: 10px 20px;
+    margin-left: 5px;
+    padding: 10px 15px;
     background-color: var(--global-color-grey);
   }
   .navItem:hover {
