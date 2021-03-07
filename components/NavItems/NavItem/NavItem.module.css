@@ -1,0 +1,34 @@
+.navItem {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.navItem a {
+  display: block;
+  height: 45px;
+  line-height: 2.6;
+  letter-spacing: 0.04rem;
+}
+
+.navItem:hover {
+  color: var(--global-color-vihr-primary-lightgreen);
+  background-color: var(--global-color-vihr-primary-lightgrey);
+}
+
+/* desktop */
+@media (min-width: 768px) {
+  .navItem {
+    width: 150px;
+    background-color: var(--global-color-grey);
+  }
+  .navItem:hover {
+    color: var(--global-color-vihr-primary-lightgreen);
+    background-color: var(--global-color-grey);
+  }
+}
+
+@media (min-width: 1024px) {
+  .navItem {
+  }
+}

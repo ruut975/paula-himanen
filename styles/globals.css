@@ -1,11 +1,13 @@
 :root {
-  --global-font-family: "Roboto", sans-serif;
-  --global-heading-1-size: 3rem;
-  --global-heading-2-size: 2rem;
-  --global-heading-3-size: 1.5rem;
+  --global-font-family: "Lato", sans-serif;
+  --global-heading-1-size: 2.6rem;
+  --global-heading-2-size: 1.6rem;
+  --global-heading-3-size: 1.1rem;
+  --global-navlink-font-size: 16px;
   --global-font-size: 1rem;
   --global-font-line-height: 1.7em;
   --global-color-darkgrey: rgb(65, 64, 64);
+  --global-color-grey: #808588;
   --global-color-white: rgb(255, 255, 255);
   --global-color-primary: #b984bee8;
   --global-color-secondary: #91c1c4;
@@ -23,10 +25,6 @@
   --font-size-multiplier: 1;
 }
 
-p {
-  margin: 0;
-}
-
 html,
 body {
   height: 100%;
@@ -35,11 +33,16 @@ body {
   font-family: var(--global-font-family);
   font-size: var(--global-font-size);
   line-height: var(--global-font-line-height);
-  color: var(--global-text-color-dark);
+  color: var(--global-color-darkgrey);
+  background-color: var(--global-color-grey);
 }
 
 ul {
   list-style-type: none;
+}
+
+p {
+  margin: 0;
 }
 
 a {

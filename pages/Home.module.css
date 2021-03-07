@@ -5,7 +5,5 @@
 }
 
 .mainFlex {
-  width: 90%;
-  margin: 0 auto;
   flex: 1;
 }
