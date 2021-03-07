@@ -19,7 +19,9 @@
 /* desktop */
 @media (min-width: 768px) {
   .navItem {
-    width: 150px;
+    width: auto;
+    margin-left: 20px;
+    padding: 10px 20px;
     background-color: var(--global-color-grey);
   }
   .navItem:hover {
@@ -30,5 +32,6 @@
 
 @media (min-width: 1024px) {
   .navItem {
+    margin-left: 40px;
   }
 }

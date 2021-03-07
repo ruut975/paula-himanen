@@ -14,22 +14,11 @@
 }
 
 .close {
-  transform: translateY(calc(-100% - 76px));
+  transform: translateY(calc(-100% - 80px));
 }
 
 .inEnglish {
-  position: fixed;
-  border: none;
-  background-color: var(--global-color-grey);
-  color: var(--global-color-white);
-  font-size: var(--global-font-size);
-  top: 7px;
-  right: 9px;
-  z-index: 500;
-}
-
-.inEnglish:hover {
-  color: var(--global-color-vihr-primary-lightgreen);
+  display: none;
 }
 
 /* desktop */
@@ -40,6 +29,22 @@
     transition: none;
     justify-content: flex-start;
     padding-bottom: 0px;
+  }
+
+  .inEnglish {
+    display: inline-block;
+    position: fixed;
+    border: none;
+    background-color: var(--global-color-grey);
+    color: var(--global-color-white);
+    font-size: var(--global-font-size);
+    top: 7px;
+    right: 9px;
+    z-index: 500;
+  }
+
+  .inEnglish:hover {
+    color: var(--global-color-vihr-primary-lightgreen);
   }
 
   .open {

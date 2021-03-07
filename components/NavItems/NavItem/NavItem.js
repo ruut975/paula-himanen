@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from './NavItem.module.css'
+import styles from "./NavItem.module.css";
 
 const NavItem = (props) => (
   <div className={styles.navItem}>

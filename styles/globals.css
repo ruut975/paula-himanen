@@ -68,6 +68,18 @@ h3 {
   color: var(--global-color-vihr-primary-lightgreen);
 }
 
+.containerFlex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainFlex {
+  flex: 1;
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* tablet */
 @media (min-width: 640px) {
   :root {

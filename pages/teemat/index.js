@@ -1,8 +1,5 @@
 const Teemat = () => {
+  return <div>Teemat Page</div>;
+};
 
-  return (
-    <div>Teemat Page</div>
-  )
-}
-
-export default Teemat
+export default Teemat;

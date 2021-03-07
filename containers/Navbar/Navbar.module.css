@@ -1,4 +1,4 @@
-.headerFlex {
+.navbarFlex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -10,15 +10,14 @@
 
 /* desktop */
 @media (min-width: 768px) {
-  .headerFlex {
+  .navbarFlex {
     flex-wrap: nowrap;
-    margin-top: 30px;
+    margin: 30px 20px 0 20px;
   }
 }
 
 @media (min-width: 1024px) {
-  .headerFlex {
-
+  .navbarFlex {
   }
 }
 
@@ -35,13 +34,12 @@
     flex: 1 1 400px;
     justify-content: space-around;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
   }
 }
 
 @media (min-width: 1024px) {
   .wrapper {
-
   }
 }
 
@@ -56,4 +54,3 @@
     display: none;
   }
 }
-
