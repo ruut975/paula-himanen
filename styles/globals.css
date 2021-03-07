@@ -1,11 +1,13 @@
 :root {
-  --global-font-family: "Roboto", sans-serif;
-  --global-heading-1-size: 3rem;
-  --global-heading-2-size: 2rem;
-  --global-heading-3-size: 1.5rem;
+  --global-font-family: "Lato", sans-serif;
+  --global-heading-1-size: 2.6rem;
+  --global-heading-2-size: 1.6rem;
+  --global-heading-3-size: 1.1rem;
+  --global-navlink-font-size: 16px;
   --global-font-size: 1rem;
   --global-font-line-height: 1.7em;
   --global-color-darkgrey: rgb(65, 64, 64);
+  --global-color-grey: #808588;
   --global-color-white: rgb(255, 255, 255);
   --global-color-primary: #b984bee8;
   --global-color-secondary: #91c1c4;
@@ -19,12 +21,11 @@
   --global-color-vihr-secondary-yellow: #ffdd00;
   --global-color-vihr-secondary-orange: #d67c1c;
   --global-color-vihr-secondary-crimson: #e5005a;
+  --global-z-index-backdrop: 300;
+  --global-z-index-modal: 500;
+  --global-z-index-nav-items: 600;
   --line-height-multiplier: 1;
   --font-size-multiplier: 1;
-}
-
-p {
-  margin: 0;
 }
 
 html,
@@ -35,11 +36,16 @@ body {
   font-family: var(--global-font-family);
   font-size: var(--global-font-size);
   line-height: var(--global-font-line-height);
-  color: var(--global-text-color-dark);
+  color: var(--global-color-darkgrey);
+  background-color: var(--global-color-grey);
 }
 
 ul {
   list-style-type: none;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -65,28 +71,40 @@ h3 {
   color: var(--global-color-vihr-primary-lightgreen);
 }
 
-/* tablet */
+.containerFlex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainFlex {
+  flex: 1;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* sm tablet */
 @media (min-width: 640px) {
   :root {
     --line-height-multiplier: 1;
     --font-size-multiplier: 1;
   }
 }
-/* laptop */
+/* tablet */
 @media (min-width: 768px) {
   :root {
     --line-height-multiplier: 1;
     --font-size-multiplier: 1;
   }
 }
-/* desktop */
+/* laptop */
 @media (min-width: 1024px) {
   :root {
     --line-height-multiplier: 1;
     --font-size-multiplier: 1;
   }
 }
-/* large-desktop */
+/* desktop */
 @media (min-width: 1280px) {
   :root {
     --line-height-multiplier: 1;

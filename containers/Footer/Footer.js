@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Footer.module.css";
 import SocialIcons from "../../components/SocialIcons/SocialIcons";
 import ContactInfo from "../../components/ContactInfo/ContactInfo";
