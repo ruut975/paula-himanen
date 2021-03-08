@@ -41,6 +41,7 @@
     font-size: var(--global-font-size);
     top: 7px;
     right: 9px;
+    z-index: var(--global-z-index-nav-english);
   }
 
   .inEnglish:hover {

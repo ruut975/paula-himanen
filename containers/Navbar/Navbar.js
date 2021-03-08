@@ -26,13 +26,12 @@ const Navbar = (props) => {
         <a className={styles.logo} href="/">
           <Logo />
         </a>
-        <a href="#" role="button" className={styles.toggleNav}>
+        <a href="#" role="button" className={styles.toggleNav} onClick={menuToggleHandler}>
           <Image
             src={iconSrc}
             alt="menu"
             width={20}
             height={20}
-            onClick={menuToggleHandler}
           />
         </a>
       </div>

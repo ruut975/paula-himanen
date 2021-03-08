@@ -24,8 +24,10 @@
   --global-z-index-backdrop: 300;
   --global-z-index-modal: 500;
   --global-z-index-nav-items: 600;
-  --line-height-multiplier: 1;
-  --font-size-multiplier: 1;
+  --global-z-index-nav-english: 700;
+  --global-width-mobile: 90%;
+  --global-width-tablet: 93%;
+  --global-width-laptop: 80%;
 }
 
 html,
@@ -45,7 +47,11 @@ ul {
 }
 
 p {
-  margin: 0;
+  margin-bottom: 46px;
+}
+
+section {
+  margin-bottom: 46px;
 }
 
 a {
@@ -79,35 +85,28 @@ h3 {
 
 .mainFlex {
   flex: 1;
-  width: 90%;
+  width: var(--global-width-mobile);
   margin: 0 auto;
 }
 
 /* sm tablet */
 @media (min-width: 640px) {
-  :root {
-    --line-height-multiplier: 1;
-    --font-size-multiplier: 1;
+  section {
+    margin-bottom: 76px;
+  }
+
+  p {
+    margin-bottom: 46px;
+  }
+
+  .mainFlex {
+    width: var(--global-width-tablet);
   }
 }
-/* tablet */
-@media (min-width: 768px) {
-  :root {
-    --line-height-multiplier: 1;
-    --font-size-multiplier: 1;
-  }
-}
+
 /* laptop */
 @media (min-width: 1024px) {
-  :root {
-    --line-height-multiplier: 1;
-    --font-size-multiplier: 1;
-  }
-}
-/* desktop */
-@media (min-width: 1280px) {
-  :root {
-    --line-height-multiplier: 1;
-    --font-size-multiplier: 1;
+  .mainFlex {
+    width: var(--global-width-laptop);
   }
 }
