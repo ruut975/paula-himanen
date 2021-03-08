@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.flexContainer p {
+  margin: 0
+}
+
 .flexContainer .header {
   margin-top: 0px;
   margin-bottom: 15px;

@@ -5,6 +5,8 @@
   align-items: center;
   color: var(--global-color-white);
   font-size: var(--global-navlink-font-size);
+  height: 80px;
+  margin-top: 20px;
 }
 
 .wrapper {
@@ -26,16 +28,20 @@
 /* sm tablet */
 @media (min-width: 640px) {
   .navbarFlex {
+    margin: 0;
     flex-wrap: nowrap;
     margin-top: 30px;
-    margin-left: 8px;
+    margin-left: 23px;
+   
   }
 
   .wrapper {
+    margin: 0;
     flex: 1 1 300px;
     justify-content: space-between;
     margin: 0;
     margin-bottom: 3px;
+    margin-left: -6px;
   }
 
   .toggleNav {
@@ -45,6 +51,7 @@
 
 @media (min-width: 1024px) {
   .navbarFlex {
+    margin: 0;
     margin-left: 30px;
   }
 }

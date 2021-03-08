@@ -12,12 +12,11 @@ const NavItems = (props) => {
     <>
       <Backdrop show={props.open} clicked={props.closed} />
       <div className={attachedClasses.join(" ")} onClick={props.closed}>
-        <NavItem path={"/paula"}>Paula</NavItem>
-        <NavItem path={"/teemat"}>Teemat</NavItem>
-        <NavItem path={"/kuntavaalit-2021"}>Kuntavaalit 2021</NavItem>
-        <NavItem path={"/blogi"}>Blogi</NavItem>
+        <NavItem path="/paula">Paula</NavItem>
+        <NavItem path="/teemat">Teemat</NavItem>
+        <NavItem path="/kuntavaalit-2021">Kuntavaalit 2021</NavItem>
+        <NavItem path="/blogi">Blogi</NavItem>
         {props.open && <NavItem path={"/eng"}>In English</NavItem>}
-
       </div>
       <button className={styles.inEnglish}><a href="/eng">In English</a></button>
     </>

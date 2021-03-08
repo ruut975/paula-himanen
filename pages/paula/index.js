@@ -1,8 +1,13 @@
+import Introduction from "../../containers/Introduction/Introduction";
+
 const Paula = () => {
+  const short = false;
 
   return (
-    <div>Paula Page</div>
-  )
-}
+    <div>
+      <Introduction short={short} />
+    </div>
+  );
+};
 
-export default Paula
+export default Paula;

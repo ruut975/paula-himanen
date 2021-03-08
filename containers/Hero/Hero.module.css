@@ -1,0 +1,28 @@
+.footerFlex {
+  min-height: 330px;
+  width: 100%;
+  color: var(--global-color-white);
+  background-color: var(--global-color-vihr-primary-darkgrey);
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+/* sm tablet */
+@media (min-width: 640px) {
+  .footerFlex {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 200px;
+    padding: 0 5%;
+  }
+}
+
+/* laptop */
+@media (min-width: 1024px) {
+  .footerFlex {
+    padding: 0 15%;
+  }
+}

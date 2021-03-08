@@ -1,0 +1,27 @@
+.readMoreLink {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper {
+  margin-left: 11px;
+  padding-top: 5px;
+  align-self: center;
+}
+
+.text {
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.white {
+  color: var(--global-color-white);
+}
+.hoverGreen:hover {
+  color: var(--global-color-vihr-primary-lightgreen);
+}
