@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./Navbar.module.css";
 
 import Logo from "../../components/Logo/Logo";
@@ -23,9 +24,11 @@ const Navbar = (props) => {
   return (
     <nav className={styles.navbarFlex}>
       <div className={styles.wrapper}>
-        <a className={styles.logo} href="/">
+        <Link href="/">
+        <a className={styles.logo}>
           <Logo />
         </a>
+        </Link>
         <a href="#" role="button" className={styles.toggleNav} onClick={menuToggleHandler}>
           <Image
             src={iconSrc}

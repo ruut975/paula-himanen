@@ -1,8 +1,11 @@
 .readMoreLink {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+}
+
+.flexStart {
+  justify-content: flex-start;
 }
 
 .imageWrapper {
@@ -22,6 +25,7 @@
 .white {
   color: var(--global-color-white);
 }
+
 .hoverGreen:hover {
   color: var(--global-color-vihr-primary-lightgreen);
 }

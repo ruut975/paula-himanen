@@ -1,8 +1,18 @@
+import Head from "next/head";
+
 const English = () => {
-
   return (
-    <div>English Page</div>
-  )
-}
+    <>
+      <Head>
+        <title>English | Paula Himanen</title>
+        <meta
+          name="Paula Himanen"
+          content="Paula Himanen Home in English"
+        ></meta>
+      </Head>
+      <div>English Page</div>
+    </>
+  );
+};
 
-export default English
+export default English;

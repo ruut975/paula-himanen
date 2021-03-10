@@ -1,0 +1,17 @@
+.author {
+  color: var(--global-color-darkgrey);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.imageWrapper {
+  margin-right: 11px;
+  align-self: center;
+}
+
+.name {
+  margin: 0;
+  color: var(--global-color-darkgrey);
+}

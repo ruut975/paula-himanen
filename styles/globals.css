@@ -46,10 +46,6 @@ ul {
   list-style-type: none;
 }
 
-p {
-  margin-bottom: 46px;
-}
-
 section {
   margin-bottom: 46px;
 }
@@ -92,11 +88,8 @@ h3 {
 /* sm tablet */
 @media (min-width: 640px) {
   section {
-    margin-bottom: 76px;
-  }
-
-  p {
-    margin-bottom: 46px;
+    width: 80%;
+    margin: 0 auto 76px;
   }
 
   .mainFlex {
@@ -109,4 +102,11 @@ h3 {
   .mainFlex {
     width: var(--global-width-laptop);
   }
+
+  section {
+    width: 70%;
+    margin: 0 auto 76px;
+  }
+
+
 }
