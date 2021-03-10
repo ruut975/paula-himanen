@@ -1,0 +1,7 @@
+.postShort {
+  margin-bottom: 70px;
+}
+
+.blogTitle:hover {
+  color: var(--global-color-vihr-primary-lightgreen);
+}

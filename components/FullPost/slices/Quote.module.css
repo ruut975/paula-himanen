@@ -1,0 +1,21 @@
+.blockQuotation {
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-size: var(--global-font-size);
+}
+
+.blockQuotation:before {
+  content: "« ";
+}
+
+.blockQuotation:after {
+  content: " »";
+}
+
+@media screen and (min-width: 640px) {
+  .blockQuotation {
+    margin-left: 50px;
+    font-size: var(--global-heading-3-size);
+    padding: 0;
+  }
+}

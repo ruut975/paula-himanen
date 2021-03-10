@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.fullPostTitle {
+  margin: 34px 0 35px;
+  width: 100%;
+}

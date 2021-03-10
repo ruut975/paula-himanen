@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.flexStart {
+  justify-content: flex-end;
+}
+
 .imageWrapper {
   margin-left: 11px;
   padding-top: 5px;
@@ -22,6 +26,7 @@
 .white {
   color: var(--global-color-white);
 }
+
 .hoverGreen:hover {
   color: var(--global-color-vihr-primary-lightgreen);
 }

@@ -1,0 +1,17 @@
+.date {
+  color: var(--global-color-darkgrey);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.imageWrapper {
+  margin-right: 11px;
+  padding-top: 2px;
+  align-self: center;
+}
+
+.time {
+  margin: 0;
+  color: var(--global-color-darkgrey);
+}

@@ -1,0 +1,21 @@
+.back {
+  color: var(--global-color-darkgrey);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.imageWrapper {
+  margin-right: 11px;
+  padding-top: 5px;
+  align-self: center;
+}
+
+.text {
+  margin: 0;
+  color: var(--global-color-darkgrey);
+}
+
+.text:hover {
+  color: var(--global-color-vihr-primary-lightgreen);
+}

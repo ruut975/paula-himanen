@@ -1,0 +1,13 @@
+.textSlice {
+
+}
+
+.textSlice ul {
+  list-style-type: initial;
+  margin-left: -20px;
+}
+
+.textSlice h2,
+.textSlice h3 {
+  color: var(--global-color-darkgrey)
+}
