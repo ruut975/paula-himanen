@@ -21,9 +21,9 @@
   --global-color-vihr-secondary-yellow: #ffdd00;
   --global-color-vihr-secondary-orange: #d67c1c;
   --global-color-vihr-secondary-crimson: #e5005a;
-  --global-z-index-backdrop: 300;
-  --global-z-index-modal: 500;
-  --global-z-index-nav-items: 600;
+  --global-z-index-backdrop: 200;
+  --global-z-index-modal: 100;
+  --global-z-index-nav-items: 300;
   --global-z-index-nav-english: 700;
   --global-width-mobile: 90%;
   --global-width-tablet: 93%;

@@ -4,6 +4,6 @@
   position: fixed;
   z-index: var(--global-z-index-backdrop);
   left: 0;
-  top: 80px;
+  top: 120px;
   background-color: rgba(0, 0, 0, 0.5);
 }
