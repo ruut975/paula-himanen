@@ -7,7 +7,7 @@ const Paula = () => {
   return (
     <>
       <Head>
-        <title>Paula Himanen | Esittely</title>
+        <title>Esittely | Paula Himanen</title>
         <meta
           name="Paula Himanen Esittely"
           content="Paula Himanen Esittely"

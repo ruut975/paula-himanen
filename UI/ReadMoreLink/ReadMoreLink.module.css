@@ -1,12 +1,11 @@
 .readMoreLink {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
 }
 
 .flexStart {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .imageWrapper {

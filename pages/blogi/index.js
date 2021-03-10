@@ -7,7 +7,7 @@ const Blogi = ({ posts }) => {
   return (
     <>
       <Head>
-        <title>Paula Himanen | Blogi</title>
+        <title>Blogi | Paula Himanen</title>
         <meta name="Paula Himanen blogi" content="Paula Himanen blogi"></meta>
       </Head>
       <Posts posts={posts}/>

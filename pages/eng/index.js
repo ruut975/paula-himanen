@@ -4,7 +4,7 @@ const English = () => {
   return (
     <>
       <Head>
-        <title>Paula Himanen</title>
+        <title>English | Paula Himanen</title>
         <meta
           name="Paula Himanen"
           content="Paula Himanen Home in English"

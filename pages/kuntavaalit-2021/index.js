@@ -4,7 +4,7 @@ const Kuntavaalit = () => {
   return (
     <>
       <Head>
-        <title>Paula Himanen | Kuntavaalit 2021</title>
+        <title>Kuntavaalit 2021 | Paula Himanen</title>
         <meta
           name="Paula Himanen Kuntavaalit"
           content="Paula Himanen Kuntavaalit"

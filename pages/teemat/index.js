@@ -4,7 +4,7 @@ const Teemat = () => {
   return (
     <>
       <Head>
-        <title>Paula Himanen | Teemat</title>
+        <title>Teemat | Paula Himanen</title>
         <meta name="Paula Himanen Teemat" content="Paula Himanen Teemat"></meta>
       </Head>
       <div>Teemat Page</div>

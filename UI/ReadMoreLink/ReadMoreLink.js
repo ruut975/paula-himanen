@@ -18,6 +18,7 @@ const ReadMoreLink = (props) => {
   return (
     <Link href={props.path}>
       <a className={readMoreLinkClasses.join(" ")}>
+        <p className={textClasses.join(" ")}>{props.children}</p>
         <div className={styles.imageWrapper}>
           <Image
             src="/arrow-right-icon.svg"
@@ -26,7 +27,6 @@ const ReadMoreLink = (props) => {
             height={14}
           />
         </div>
-        <p className={textClasses.join(" ")}>{props.children}</p>
       </a>
     </Link>
   );

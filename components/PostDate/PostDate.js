@@ -2,8 +2,12 @@ import Image from "next/image";
 import styles from "./PostDate.module.css";
 
 const PostDate = ({ date }) => {
-  // Format the date to dd.M.YYYY
-  const displayDate = date.split("-").reverse().join(".");
+  // Format the date to dd.MM.YYYY
+  const newDate = new Date(date);
+  const day = newDate.getDate();
+  const month = newDate.getMonth();
+  const year = newDate.getFullYear();
+  const displayDate = `${day}.${month}.${year}`
 
   return (
     <div className={styles.date}>

@@ -13,7 +13,8 @@ const LoadedPost = ({ post }) => {
     return (
       <>
         <Head>
-          <title>{title}</title>
+        <title>{title} | Paula Himanen</title>
+        <meta name="Paula Himanen blogi" content="Paula Himanen blogi"></meta>
         </Head>
        <FullPost post={post} title={title}/>
       </>
