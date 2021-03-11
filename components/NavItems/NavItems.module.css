@@ -34,7 +34,7 @@
 
   .inEnglish {
     display: inline-block;
-    position: fixed;
+    position: absolute;
     border: none;
     background-color: var(--global-color-grey);
     color: var(--global-color-white);

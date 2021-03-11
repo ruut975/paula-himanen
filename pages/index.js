@@ -4,9 +4,7 @@ import { Client } from '../prismic-configuration'
 import Introduction from "../containers/Introduction/Introduction";
 import BlogPostCards from '../components/BlogPostCards/BlogPostCards'
 
-
-export default function Home({ posts }) {
-  console.log(posts)
+export default function Home({ intro, posts }) {
   const short = true;
 
   return (
@@ -19,16 +17,14 @@ export default function Home({ posts }) {
         ></meta>
       </Head>
       <div>
-        <Introduction short={short} readMorePath="/paula" />
         <BlogPostCards posts={posts} />
+        <Introduction short={short} readMorePath="/paula" data={intro.data} />
       </div>
     </>
   );
 }
 
 export async function getStaticProps() {
-  // const { ref } = previewData
-
   const client = Client()
 
   const posts = await client.query(
@@ -36,11 +32,15 @@ export async function getStaticProps() {
       orderings: "[my.post.date desc]"
     },
   )
+  
+  const intro = await client.query(
+    Prismic.Predicates.at("document.type", "introduction")
+  );
 
   return {
     props: {
       posts: posts ? posts.results : [],
-      // preview
+      intro: intro.results[0],
     }
   }
 }
