@@ -48,7 +48,6 @@ const Introduction = (props) => {
   return (
     <section className={styles.introduction}>
       {image}
-
       <div className={styles.text}>{text}</div>
       {link}
     </section>

@@ -1,6 +1,6 @@
 :root {
   --global-font-family: "Lato", sans-serif;
-  --global-heading-1-size: 2.6rem;
+  --global-heading-1-size: 3rem;
   --global-heading-2-size: 1.6rem;
   --global-heading-3-size: 1.1rem;
   --global-navlink-font-size: 16px;
@@ -40,10 +40,6 @@ body {
   line-height: var(--global-font-line-height);
   color: var(--global-color-darkgrey);
   background-color: var(--global-color-grey);
-}
-
-ul {
-  list-style-type: none;
 }
 
 section {

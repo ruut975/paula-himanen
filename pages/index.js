@@ -2,9 +2,11 @@ import Head from "next/head";
 import Prismic from '@prismicio/client'
 import { Client } from '../prismic-configuration'
 import Introduction from "../containers/Introduction/Introduction";
+import Summary from '../components/Summary/Summary';
 import BlogPostCards from '../components/BlogPostCards/BlogPostCards'
 
-export default function Home({ intro, posts }) {
+export default function Home({ intro, summaries, posts }) {
+  console.log(summaries)
   const short = true;
 
   return (
@@ -17,8 +19,9 @@ export default function Home({ intro, posts }) {
         ></meta>
       </Head>
       <div>
-        <BlogPostCards posts={posts} />
         <Introduction short={short} readMorePath="/paula" data={intro.data} />
+        <Summary summaries={summaries} />
+        <BlogPostCards posts={posts} />
       </div>
     </>
   );
@@ -37,10 +40,17 @@ export async function getStaticProps() {
     Prismic.Predicates.at("document.type", "introduction")
   );
 
+  const summaries = await client.query(
+    Prismic.Predicates.at("document.type", "summary_item"), {
+      orderings: "[my.summary_item.order]"
+    },
+  );
+
   return {
     props: {
       posts: posts ? posts.results : [],
       intro: intro.results[0],
+      summaries: summaries ? summaries.results : [],
     }
   }
 }
