@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Prismic from '@prismicio/client'
-import { Client } from '../prismic-configuration'
+import Prismic from "@prismicio/client";
+import { Client } from "../prismic-configuration";
 import Introduction from "../containers/Introduction/Introduction";
-import Summary from '../components/Summary/Summary';
-import BlogPostCards from '../components/BlogPostCards/BlogPostCards'
+import Summary from "../components/Summary/Summary";
+import BlogPostCards from "../components/BlogPostCards/BlogPostCards";
 
 export default function Home({ intro, summaries, posts }) {
   const short = true;
@@ -17,32 +17,32 @@ export default function Home({ intro, summaries, posts }) {
           content="Paula Himanen Kotisivu"
         ></meta>
       </Head>
-      <div>
-        <Introduction short={short} readMorePath="/paula" data={intro.data} />
-        <Summary summaries={summaries} />
-        <BlogPostCards posts={posts} />
-      </div>
+      <Introduction short={short} readMorePath="/paula" data={intro.data} />
+      <Summary summaries={summaries} />
+      <BlogPostCards posts={posts} />
     </>
   );
 }
 
 export async function getStaticProps() {
-  const client = Client()
+  const client = Client();
 
   const posts = await client.query(
-    Prismic.Predicates.at("document.type", "post"), {
-      orderings: "[my.post.date desc]"
-    },
-  )
-  
+    Prismic.Predicates.at("document.type", "post"),
+    {
+      orderings: "[my.post.date desc]",
+    }
+  );
+
   const intro = await client.query(
     Prismic.Predicates.at("document.type", "introduction")
   );
 
   const summaries = await client.query(
-    Prismic.Predicates.at("document.type", "summary_item"), {
-      orderings: "[my.summary_item.order]"
-    },
+    Prismic.Predicates.at("document.type", "summary_item"),
+    {
+      orderings: "[my.summary_item.order]",
+    }
   );
 
   return {
@@ -50,6 +50,6 @@ export async function getStaticProps() {
       posts: posts ? posts.results : [],
       intro: intro.results[0],
       summaries: summaries ? summaries.results : [],
-    }
-  }
+    },
+  };
 }

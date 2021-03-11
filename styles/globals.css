@@ -76,6 +76,8 @@ h3 {
 }
 
 .mainFlex {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   width: var(--global-width-mobile);
   margin: 0 auto;

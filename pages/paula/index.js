@@ -14,9 +14,7 @@ const Paula = ({ intro }) => {
           content="Paula Himanen Esittely"
         ></meta>
       </Head>
-      <div>
-        <Introduction short={short} data={intro.data} />
-      </div>
+      <Introduction short={short} data={intro.data} />
     </>
   );
 };
