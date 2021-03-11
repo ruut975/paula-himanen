@@ -2,7 +2,7 @@ import { default as NextLink } from 'next/link'
 import { RichText } from 'prismic-reactjs'
 import ReadMoreLink from "../../../UI/ReadMoreLink/ReadMoreLink";
 import PostDate from '../../PostDate/PostDate'
-import FirstParagraph from './FirstParagraph/FirstParagraph'
+import FirstParagraph from '../../FirstParagraph/FirstParagraph'
 
 import styles from "./PostShort.module.css";
 

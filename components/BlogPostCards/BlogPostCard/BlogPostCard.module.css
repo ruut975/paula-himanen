@@ -1,0 +1,38 @@
+.postCard {
+  margin: 10px 0 5px;
+  padding: 9px 15px 30px;
+  border: 1px var(--global-color-vihr-primary-darkgrey) solid;
+  border-radius: 5px;
+  box-shadow: 1px 3px 3px var(--global-color-vihr-primary-darkgrey);
+  flex: 1 1 300px;
+}
+
+.blogTitle:hover {
+  color: var(--global-color-vihr-primary-lightgreen);
+}
+
+.postCard:nth-child(4) {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .postCard {
+    flex: 1 0 41%;
+    margin: 20px 10px;
+  }
+
+  .postCard:nth-child(4) {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .postCard {
+    flex: 1 0 220px;
+    height: 607px;
+  }
+
+  .postCard:nth-child(4) {
+    display: none;
+  }
+}
