@@ -29,7 +29,6 @@
 @media (min-width: 1024px) {
   .postCard {
     flex: 1 0 220px;
-    height: 607px;
   }
 
   .postCard:nth-child(4) {

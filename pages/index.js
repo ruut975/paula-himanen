@@ -6,7 +6,6 @@ import Summary from '../components/Summary/Summary';
 import BlogPostCards from '../components/BlogPostCards/BlogPostCards'
 
 export default function Home({ intro, summaries, posts }) {
-  console.log(summaries)
   const short = true;
 
   return (

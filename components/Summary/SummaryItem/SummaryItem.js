@@ -17,7 +17,6 @@ const SummaryItem = ({ summary }) => {
   const readMoreLinkPath = RichText.asText(data.read_more_link_path) ? RichText.asText(data.read_more_link_path) : null
 
   return (
-    <>
     <div className={styles.summaryItem}>
       <h1 className={styles.summaryTitle}>{summaryTitle}</h1>
       <div className={styles.imageWrapper}>
@@ -29,12 +28,10 @@ const SummaryItem = ({ summary }) => {
         />
       </div>
       <div className={styles.summaryDescription}>{summaryDescription}</div>
-    
-    </div>
       {readMoreLinkPath !== null 
-        ? <div className={styles.readMoreLink}><ReadMoreLink hoverGreen flexStart path={readMoreLinkPath}>{linkText}</ReadMoreLink></div>
-        : null }
-        </>
+      ? <div className={styles.readMoreLink}><ReadMoreLink hoverGreen flexStart path={readMoreLinkPath}>{linkText}</ReadMoreLink></div>
+      : null }
+    </div>
   );
 };
 
