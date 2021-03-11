@@ -4,13 +4,13 @@ import ReadMoreLink from "../../../UI/ReadMoreLink/ReadMoreLink";
 import PostDate from '../../PostDate/PostDate'
 import FirstParagraph from '../../FirstParagraph/FirstParagraph'
 
-import styles from "./PostShort.module.css";
+import styles from "./BlogPostCard.module.css";
 
-const PostShort = ({ post }) => {
+const PostCard = ({ post }) => {
   const title = RichText.asText(post.data.title) ? RichText.asText(post.data.title) : 'Untitled'
 
   return (
-    <div className={styles.postShort}>
+    <div className={styles.postCard}>
       <NextLink
         as={`/blogi/${post.uid}`}
         href='/blogi/[uid]'
@@ -31,4 +31,4 @@ const PostShort = ({ post }) => {
   );
 };
 
-export default PostShort;
+export default PostCard;

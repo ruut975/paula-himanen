@@ -1,0 +1,19 @@
+.blogPostCards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .blogPostCards {
+    width: 90%;
+  }
+}
+
+
+
