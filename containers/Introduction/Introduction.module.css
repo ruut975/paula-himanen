@@ -10,6 +10,8 @@
 .imageWrapper {
   align-self: center;
   order: 2;
+  width: 100%;
+  margin-top: 25px;
 }
 
 .link {
@@ -24,11 +26,15 @@
 
   .imageWrapper {
     float: left;
-    margin-right: 32px;
+    margin-right: 21px;
     padding-top: 9px;
+    width: 50%;
   }
 }
 
 /* laptop */
 @media (min-width: 1024px) {
+  .imageWrapper {
+    margin-right: 27px;
+  }
 }

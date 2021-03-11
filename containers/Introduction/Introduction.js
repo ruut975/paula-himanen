@@ -1,34 +1,39 @@
 import Image from "next/image";
 import styles from "./Introduction.module.css";
 import ReadMoreLink from "../../UI/ReadMoreLink/ReadMoreLink";
+import { RichText } from "prismic-reactjs";
 
 const Introduction = (props) => {
-  let text = "long text"
-  let link = null;
-  let imageShow = false;
-  let image = null;
-  const imageSrc = "";
-  const imageAlt = "";
-  const imageWidth = 333;
-  const imageHeight = 500;
+  const { short, readMorePath, data } = props;
 
-  imageShow &&
-    (image = (
+  let text = <RichText render={data.finnish_full} />;
+  let link = null;
+  let image = null;
+  let imageShow = data.show_image;
+  const imageSrc = data.image.url;
+  const imageAlt = data.image.alt;
+  const imageWidth = data.image.dimensions?.width;
+  const imageHeight = data.image.dimensions?.height;
+
+  if (imageShow && imageSrc) {
+    image = (
       <div className={styles.imageWrapper}>
         <Image
           src={imageSrc}
           alt={imageAlt}
           width={imageWidth}
           height={imageHeight}
+          loading="eager"
         />
       </div>
-    ));
+    );
+  }
 
-  if (props.short) {
-    text = "short text"
+  if (short) {
+    text = <RichText render={data.finnish_short} />;
     link = (
       <ReadMoreLink
-        path={props.readMorePath}
+        path={readMorePath}
         className={styles.link}
         bold
         white
@@ -43,7 +48,8 @@ const Introduction = (props) => {
   return (
     <section className={styles.introduction}>
       {image}
-      <p className={styles.text}>{text}</p>
+
+      <div className={styles.text}>{text}</div>
       {link}
     </section>
   );
