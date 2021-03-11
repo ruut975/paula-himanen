@@ -18,7 +18,7 @@
 @media (min-width: 640px) {
   .postCard {
     flex: 1 0 41%;
-    margin: 20px 10px 20px;
+    margin: 20px 10px;
   }
 
   .postCard:nth-child(4) {

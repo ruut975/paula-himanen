@@ -4,7 +4,6 @@ import styles from "./BlogPostCards.module.css";
 
 const BlogPostCards = ({ posts }) => {
   const fourNewestPosts = posts.slice(0, 4);
-  console.log(fourNewestPosts);
 
   return (
     <section className={styles.blogPostCards}>

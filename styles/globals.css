@@ -88,7 +88,6 @@ h3 {
 /* sm tablet */
 @media (min-width: 640px) {
   section {
-    width: 80%;
     margin: 0 auto 76px;
   }
 
@@ -104,7 +103,6 @@ h3 {
   }
 
   section {
-    width: 70%;
     margin: 0 auto 76px;
   }
 
