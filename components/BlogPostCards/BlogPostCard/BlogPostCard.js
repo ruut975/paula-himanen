@@ -19,7 +19,7 @@ const PostCard = ({ post }) => {
         </a>
       </NextLink>
       <PostDate date={post.data.date} />
-      <FirstParagraph sliceZone={post.data.body} textLimit={300} />
+      <FirstParagraph body={post.data.body} textLimit={300} />
       <ReadMoreLink hoverGreen flexStart path={`/blogi/${post.uid}`}>
         Read More
       </ReadMoreLink>

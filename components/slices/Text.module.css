@@ -1,3 +1,7 @@
+.textSlice {
+  margin-bottom: 25px;
+}
+
 .textSlice ul {
   list-style-type: initial;
   margin-left: -20px;

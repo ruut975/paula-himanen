@@ -17,8 +17,8 @@ export default function Home({ intro, posts }) {
         ></meta>
       </Head>
       <div>
-        <BlogPostCards posts={posts} />
         <Introduction short={short} readMorePath="/paula" data={intro.data} />
+        <BlogPostCards posts={posts} />
       </div>
     </>
   );

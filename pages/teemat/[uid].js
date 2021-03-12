@@ -1,37 +1,43 @@
 import Head from "next/head";
 import { RichText } from "prismic-reactjs";
 import Prismic from "@prismicio/client";
-import { Client } from "../../../prismic-configuration";
-import TabsLayout from '../../../layouts/TabsLayout'
-import TabBody from '../../../components/Tabs/TabBody/TabBody'
+import { Client } from "../../prismic-configuration";
+import Tabs from "../../components/Tabs/Tabs";
+import TabBody from "../../components/Tabs/TabBody/TabBody";
 
 const LoadedTab = ({ themes, theme }) => {
-  const tabText = RichText.asText(theme.data.tab_text) ? RichText.asText(theme.data.tab_text) : "Untitled";
+  if (themes && theme) {
+ 
+    return (
+      <>
+        <Head>
+          <title>Teemat | Paula Himanen</title>
+          <meta
+            name="Paula Himanen Teemat"
+            content="Paula Himanen Teemat"
+          ></meta>
+        </Head>
+          <Tabs themes={themes} theme={theme} />
+          {/* <TabBody theme={theme} /> */}
+      </>
+    );
+  }
 
-  return (
-    <>
-      <Head>
-        <title>{tabText} | Paula Himanen</title>
-        <meta name="Paula Himanen Teemat" content="Paula Himanen Teemat"></meta>
-      </Head>
-      <TabsLayout themes={themes}>
-        <TabBody theme={theme} />
-      </TabsLayout>
-    </>
-  );
+  return null;
 };
 
 export async function getStaticProps({ params }) {
-
-  const client = Client()
+  const client = Client();
 
   const theme = await client.getByUID("theme", params.uid);
 
   const themes = await client.query(
-    Prismic.Predicates.at("document.type", "theme"), {
-      orderings: "[my.theme.order_number]"
-    },
-  )
+    Prismic.Predicates.at("document.type", "theme"),
+    {
+      orderings: "[my.theme.order_number]",
+    }
+  );
+
 
   return {
     props: {
