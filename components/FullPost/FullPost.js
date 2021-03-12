@@ -1,5 +1,5 @@
 import BackButton from "./BackButton/BackButton";
-import SliceZone from "./SliceZone/SliceZone";
+import SliceZone from "../SliceZone/SliceZone";
 import PostDate from "../PostDate/PostDate";
 import PostAuthor from "../PostAuthor/PostAuthor";
 import styles from "./FullPost.module.css";
@@ -14,7 +14,7 @@ const FullPost = ({ post, title }) => {
           <PostAuthor author={post.data.author} />
           <PostDate date={post.data.date} />
         </div>
-        <SliceZone sliceZone={post.data.body} />
+        <SliceZone body={post.data.body} />
       </section>
     </>
   );

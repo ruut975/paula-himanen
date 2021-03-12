@@ -1,10 +1,10 @@
 import Caption from './Caption'
-import styles from './DefaultImage.module.css'
+import styles from './ImageWithCaption.module.css'
 
 /**
  * Default image component
  */
-const DefaultImage = ({ slice }) => {
+const ImageWithCaption = ({ slice }) => {
   const imageUrl = slice.primary.image.url
   const imageAlt = slice.primary.image.alt
   const caption = slice.primary.caption
@@ -17,4 +17,4 @@ const DefaultImage = ({ slice }) => {
   )
 }
 
-export default DefaultImage
+export default ImageWithCaption

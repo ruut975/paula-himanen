@@ -3,9 +3,9 @@ import { RichText } from 'prismic-reactjs'
 /**
  * Component that returns the first paragraph of a post
  */
-const FirstParagraph = ({ sliceZone, textLimit = 300 }) => {
+const FirstParagraph = ({ body, textLimit = 300 }) => {
   // Find the first text slice of post's body
-  const firstTextSlice = sliceZone.find(slice => slice.slice_type === 'text')
+  const firstTextSlice = body.find(slice => slice.slice_type === 'rich_text')
 
   if (firstTextSlice) {
     const text = RichText.asText(firstTextSlice.primary.text)

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { RichText } from "prismic-reactjs";
 import Prismic from "@prismicio/client";
-
 import { Client } from "../../../prismic-configuration";
 import FullPost from '../../../components/FullPost/FullPost'
 

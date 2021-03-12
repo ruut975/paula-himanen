@@ -1,0 +1,18 @@
+.tab {
+  background-color: var(--global-color-vihr-primary-lightgrey);
+  border: 1px var(--global-color-vihr-primary-darkgrey) solid;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+  color: var(--global-color-vihr-primary-darkgrey);
+}
+
+.tab a {
+ display: block;
+ padding: 10px 20px;
+}
+
+.tab:hover {
+  background-color: var(--global-color-vihr-primary-darkgrey);
+  color: var(--global-color-white);
+}
